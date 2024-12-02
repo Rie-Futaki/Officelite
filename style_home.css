@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root{
+    --primary-blue: #5175FF; /* Buttons and Officelite Logo */
+    --secondary-blue: #829CFF; /* Lighterpart of Officelite Logo? */
+    --light-blue: #C1CFFF; /* homepage, lighter buttons */
+    --lighter-blue: #E4EAFF; /* ??? */
+    --dark-gray: #1C1F2C; /* font? */
+    --gray: #212529; /* Backgroud; dark */
+    --light-gray: #F8F8F8; /* Background; light */
+    --white: #FFFFFF; /* forms and some button text */
+    --purple: #7101FD;
+    --light-purple: #E5E4FE;
+}
+
+body{
+    background: linear-gradient(to bottom, var(--light-gray) 63%, var(--dark-gray) 63% 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 0px 100px 0px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    color: var(--dark-gray);
+    width: 100vw;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.home-link{
+    margin: 50px 0px 0px 20px;
+}
+
+header{
+    max-width: 100%;
+    margin: 50px 0px 30px 0px;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 3rem;
+    max-width: 90%;
+}
+
+.charts{
+    max-width: 90%;
+}
+
+.subheading{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #65676f;
+    line-height: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.started{
+    background-color: var(--purple);
+    text-decoration: none;
+    color: var(--white);
+    padding: 15px 35px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px 80px 0px;
+}
+
+.box-light, .box-dark{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    height: 420px;
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px 20px 30px 20px;
+}
+
+.box-light{
+    background-color: var(--white);
+    color: var(--dark-gray);
+    margin: 10px 0px 10px 0px;
+    color: #65676f;
+}
+
+.box-dark{
+    background-color: var(--purple);
+    color: var(--white);
+    margin: 10px 0px 15px 0px;
+}
+
+.name{
+    font-size: 1.5rem;
+}
+
+.box-light .name, .box-light .price{
+    color: var(--dark-gray);
+}
+
+.price{
+    font-size: 2rem;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+.right-side{
+    margin: 80px 0px 30px 0px;
+}
+
+.sign-up-light{
+    background-color: var(--white);
+    text-decoration: none;
+    color: var(--purple);
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.sign-up-dark{
+    background-color: var(--light-purple);
+    text-decoration: none;
+    color: var(--purple);
+    padding: 15px 35px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.started:hover{
+    background-color: #fd01a1;
+}
+
+.sign-up-dark:hover{
+    background-color: #e6bef8;
+}
+
+.sign-up-light:hover{
+    background-color: var(--light-purple);
+}
+
+/* Tablet version: */
+@media screen and (min-width: 768px){
+    body{
+        background: linear-gradient(to bottom, var(--light-gray) 64%, var(--dark-gray) 64% 100%);
+        }
+
+    .home-link{
+        margin: 70px 0px 0px 80px;
+    }
+
+    .header-container{
+        margin-left: 80px;
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .texts{
+        grid-row: 1;
+    }
+    
+    .charts{
+        margin-top: 40px;
+        grid-column: 2;
+    }
+
+    .boxes{
+        gap: 20px;
+    }
+
+    .box-light, .box-dark{
+        height: 300px;
+    }
+
+    .box-grid{
+        height: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        text-align:start;
+    }
+
+    .left-side{
+        margin-left: 50px;
+    }
+
+    .sign-up-dark, .sign-up-light{
+        align-self: flex-start;
+        margin-left: 50px;
+    }
+}
+
+/* Desktop version: */
+
+@media screen and (min-width: 1000px){
+    .header-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .subheading{
+        max-width: 640px;
+    }
+
+    .boxes{
+        flex-direction: row;
+    }
+
+    .box-light, .box-dark{
+        height: 450px;
+    }
+
+    .box-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align:center;
+    }
+
+    .left-side{
+        margin-left: 0px;
+    }
+
+    .sign-up-dark, .sign-up-light{
+        margin-top: 30px;
+        align-self: center;
+    }
+}
+
+/* TO DO:
+desktop version
+make hover on buttons?
+*/

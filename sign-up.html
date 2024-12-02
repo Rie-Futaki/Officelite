@@ -4,19 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CST8117 - Project 3</title>
+  <link rel="stylesheet" href="style_sign_up.css">
 </head>
 <body>
-  Work smarter. Save time.
+  <main class = "container">
+    <div class = "left-side">
+      <nav class = "home-link" >
+        <a href = "index.html">
+          <img src = "images/logo.svg" alt = "Officelite Logo">
+        </a>
+      </nav>
+      <header>
+        <h1 class = "heading">Work smarter. Save time.</h1>
+        <h2 class = "subheading">  Easily manage your projects. Get on the list and receive in-app perks available only to 
+          early subscribers. We are moving into final development and getting ready for official launch soon.</h2>
+      </header>
+    </div>
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
-
-
-  Name
-  Email Address
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Get on the list
+    <div class = "right-side">
+      <form class = "form-container" action = "example.hmtl" method = "post">
+        <label for = "fullname">Name</label>
+        <input id = "fullname" type = "text" name = "fullname">
+        <label for = "email">Email</label>
+        <input id = "email" type = "email" name = "email">
+        <label for = "plan">Plan</label>
+        <select id = "plan" name = "plan">
+          <option value = "select" selected>Select a plan...</option>
+          <option value = "basic">Basic Pack Free</option>
+          <option value = "pro">Pro Pack $9.99</option> 
+          <option value = "ultimate">Ultimate Pack $19.99</option>
+        </select>
+        <button class = "submit" type = "submit">Get on the list</button>
+      </form>
+    </div>
+  </main>
 </body>
 </html>

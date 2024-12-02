@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root{
+    --primary-blue: #5175FF;
+    --light-blue: #C1CFFF;
+    --lighter-blue: #E4EAFF;
+    --dark-gray: #1C1F2C;
+    --light-gray: #F8F8F8;
+    --white: #FFFFFF;
+}
+
+body{
+    background: linear-gradient(to bottom, var(--light-gray) 63%, var(--dark-gray) 63% 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 0px 100px 0px;
+    font-family: "Kumbh Sans", sans-serif;
+    color: var(--dark-gray);
+    font-weight: 400;
+    width: 100vw;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.home-link{
+    margin: 50px 0px 0px 20px;
+}
+
+header{
+    margin: 60px 0px 0px 20px;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+.subheading{
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #65676f;
+    line-height: 1rem;
+    max-width: 95%;
+}
+
+.right-side{
+margin:40px 20px 0px 0px;
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    background-color: var(--white);
+    border-radius: 15px;
+    margin-left: 20px;
+    padding: 30px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+input{
+    height: 25px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #cbcbcb;
+}
+
+select{
+    height: 29px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #cbcbcb;
+}
+
+input:focus{
+    border: 1px solid var(--light-blue);
+    background-color:var(--lighter-blue);
+    outline:none;
+}
+
+.submit{
+    margin: 30px 0px 25px 0px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--white);
+    border: 1px solid var(--primary-blue);
+    background-color: var(--primary-blue);
+}
+
+.submit:hover{
+    border: 1px solid #65cefb;
+    background-color: #65cefb;
+}
+
+/* Tablet version: */
+@media screen and (min-width: 768px){
+    body{
+        background: linear-gradient(to bottom, var(--light-gray) 70%, var(--dark-gray) 70% 100%);
+    }
+    .home-link{
+        margin-left: 80px;
+    }
+    header{
+        margin-left: 80px;
+    }
+    .subheading{
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+    .form-container{
+        margin:0px 80px;
+    }
+}
+
+/* Desktop version: */
+@media screen and (min-width: 1000px){
+    body{
+        background: linear-gradient(to right, var(--light-gray) 67%, var(--dark-gray) 67% 100%);
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .home-link{
+        margin-left: 50px;
+    }
+    header{
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .subheading{
+        font-size: 1rem;
+        line-height: 1.6rem;
+        max-width: 750px;
+    }
+    .form-container{
+        margin-top: 130px;
+    }
+}
